@@ -33,11 +33,11 @@ flag1=0
 i=0
 m=0
 n=0
-while(1):
+while 1:
 	l=sys.stdin.read(1)
-	if(l=='\n' and flag1==1):
+	if (l=='\n' and flag1==1):
 		flag+=1
-	elif(l=='\n' and flag<2 and flag1!=1):
+	elif l == '\n' and flag < 2:
 		p.append([])
 		i+=1
 		n+=1
@@ -58,17 +58,14 @@ i=0
 j=0
 a=0
 flag2=0
-while (1):
+while 1:
 	if flag2==0 and p[i][j]=='#':
 		a+=1
 		#print(a)
 		if i>0 and p[i-1][j]=='#':
 			a-=1
 			#print(a)
-	if p[i][j]=='#':
-		flag2=1
-	else:
-		flag2=0
+	flag2 = 1 if p[i][j]=='#' else 0
 	j+=1
 	if j==m:
 		j=0

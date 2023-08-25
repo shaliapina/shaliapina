@@ -5,6 +5,7 @@
 Вывести наибольшую сумму последовательно идущих элементов 
 этой последовательности (не менее одного).'''
 
+
 x=[]
 num=1
 while num!=0:
@@ -17,10 +18,9 @@ print(x)
 b=0
 a=0
 i=0
-for i in range (len(x)):
-	b=b+x[i]
-	if b<0:
-		b=0
+for item in x:
+	b = b + item
+	b = max(b, 0)
 	if b>a:
 		a=b
 print(a)

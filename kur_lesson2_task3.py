@@ -7,6 +7,7 @@
 Строки/кортежи и иные последовательности не использовать.'''
 
 
+
 k=input('Введите цифру от 0 до 9 \n')
 flag = 0
 flag1 = 0
@@ -14,8 +15,8 @@ p=0
 for i in range(len(k)):
 	if flag==0 and k[i]!=' ' and k[i]!=0 and k[i]!='\n':
 		flag=1
-		
-	if flag==1 and (k[i]==' ' or k[i]=='\n'):
+
+	if flag == 1 and k[i] in [' ', '\n']:
 		flag1=1
 	if flag==1 and flag1==1 and k[i]!=' ' and k[i]!='\n':
 		print('You must enter only one digit from 0 to 9')
