@@ -12,8 +12,7 @@ Output:
 ABAB
 '''
 def AplusB2(x,y):
-	c=(x+y)*2
-	return c
+	return (x+y)*2
 x=input()
 y=input()
 print(AplusB2(x,y))

@@ -23,7 +23,7 @@ def chainslice(begin,end,seq0,seq1,*seq2):
 	seq = list(chain(seq0, seq1, seq3))
 	print(seq)
 	i=begin
-	while i>=begin and i<end:
+	while i >= i and i < end:
 		yield seq[i]
 		i+=1
 
