@@ -2,6 +2,7 @@
 проверить, является ли оно степенью натурального числа (>1). 
 Вывести YES или NO соответственно.'''
 
+
 x = input('Enter a natural number 2⩽N⩽1000000: \n')
 flag = 0
 flag1 = 0
@@ -19,8 +20,6 @@ for i in range(len(x)):
 			print('Don\'t use ', x[i])
 			exit()
 		p=p*10+int(x[i])
-for i in range(len(x)):
-	pass#if flag == 1 and 
 for i in range(len(x)):
 	if ord(x[i])==ord('1') and len(x)==1:
 		print('The number must be in the interval 2⩽N⩽1000000')
